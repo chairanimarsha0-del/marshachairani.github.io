@@ -1,79 +1,221 @@
+<!-- ==============================
+STRUKTUR PROJECT (HTML, CSS, JS)
+============================== -->
+
+<!--
+project/
+│── index.html
+│── about.html
+│── produk.html
+│── kontak.html
+│── hasil.html
+│── style.css
+│── script.js
+-->
+
+<!-- ==============================
+index.html (HOME)
+============================== -->
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CreativeTeen - Content Creator Studio</title>
+    <title>Machaa Creative</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="produk.html">Produk</a>
+<a href="kontak.html">Kontak</a>
+</nav>
 
-    <nav>
-        <div class="logo">CreativeTeen</div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#produk">Produk</a></li>
-            <li><a href="#kontak">Kontak</a></li>
-        </ul>
-    </nav>
+<h1>Machaa Creative</h1>
+<p>Jasa pembuatan konten pendek kreatif untuk menginspirasi anak muda agar lebih produktif dan kreatif di dunia digital.</p>
 
-    <section id="home" class="hero">
-        <h1>Inspirasi Digital Remaja</h1>
-        <p>Membantu kamu menciptakan konten video dan blog yang bermakna dan edukatif.</p>
-    </section>
-
-    <section id="about" class="container">
-        <h2>Tentang Kami</h2>
-        <div class="card">
-            <h3>CreativeTeen Studio</h3>
-            <p><strong>Latar Belakang:</strong> Berawal dari keinginan untuk mengisi ruang digital remaja dengan konten yang lebih positif dan inspiratif.</p>
-            <p><strong>Visi:</strong> Menjadi wadah kreatifitas utama bagi konten edukasi remaja di Indonesia.</p>
-            <p><strong>Misi:</strong> Memproduksi video berkualitas dan tulisan blog yang mudah dipahami namun penuh ilmu.</p>
-        </div>
-    </section>
-
-    <section id="produk" class="container">
-        <h2>Produk Digital</h2>
-        <div class="grid-produk">
-            <div class="card-produk">
-                <h3>Video Edukasi: Public Speaking</h3>
-                <p>Panduan video cara tampil percaya diri di depan kamera untuk remaja.</p>
-                <p class="harga">Rp 10.000</p>
-            </div>
-            <div class="card-produk">
-                <h3>Video Edukasi: Editing Mobile</h3>
-                <p>Belajar edit video cinematik hanya menggunakan handphone.</p>
-                <p class="harga">Rp 10.000</p>
-            </div>
-            <div class="card-produk">
-                <h3>E-Blog: Creative Writing</h3>
-                <p>Kumpulan tips menulis blog yang menarik untuk audiens sebaya.</p>
-                <p class="harga">Rp 10.000</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="kontak" class="container">
-        <h2>Hubungi Kami</h2>
-        <div class="card">
-            <form id="contactForm">
-                <input type="text" id="nama" placeholder="Nama Lengkap" value="Marsha Chairani" required>
-                <input type="email" id="email" placeholder="Email" value="chairanimarsha0@gmail.com" required>
-                <textarea id="pesan" placeholder="Pesan kamu..." required></textarea>
-                <button type="submit">Kirim Pesan</button>
-            </form>
-            <div id="response" class="hidden">
-                <h3>Terima Kasih!</h3>
-                <p id="responseText"></p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 CreativeTeen Studio</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
+
+<!-- ==============================
+about.html
+============================== -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>About</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="produk.html">Produk</a>
+<a href="kontak.html">Kontak</a>
+</nav>
+
+<h2>Machaa Creative</h2>
+<p>Usaha digital di bidang content creator konten pendek.</p>
+
+<h3>Visi</h3>
+<p>Menjadi inspirasi digital bagi anak muda.</p>
+
+<h3>Misi</h3>
+<ul>
+<li>Membuat konten kreatif</li>
+<li>Menginspirasi generasi muda</li>
+<li>Layanan berkualitas</li>
+</ul>
+
+</body>
+</html>
+
+<!-- ==============================
+produk.html
+============================== -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Produk</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="produk.html">Produk</a>
+<a href="kontak.html">Kontak</a>
+</nav>
+
+<h2>Produk Digital</h2>
+
+<div class="card">
+<h3>Video Motivasi</h3>
+<p>Konten pendek untuk membangun semangat anak muda.</p>
+<p>Harga: Rp10.000</p>
+</div>
+
+<div class="card">
+<h3>Konten Edukasi</h3>
+<p>Konten singkat edukatif dan inspiratif.</p>
+<p>Harga: Rp10.000</p>
+</div>
+
+<div class="card">
+<h3>Storytelling</h3>
+<p>Cerita inspiratif untuk kreativitas.</p>
+<p>Harga: Rp10.000</p>
+</div>
+
+</body>
+</html>
+
+<!-- ==============================
+kontak.html
+============================== -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kontak</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="produk.html">Produk</a>
+<a href="kontak.html">Kontak</a>
+</nav>
+
+<h2>Kontak</h2>
+<form onsubmit="kirimData(event)">
+<label>Nama:</label><br>
+<input type="text" id="nama" value="Machaa"><br>
+
+<label>Email:</label><br>
+<input type="email" id="email" value="chairanimarsha0@gmail.com"><br><br>
+
+<button type="submit">Kirim</button>
+</form>
+
+<p>Pembayaran: Scan DANA ke 083834220255</p>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+<!-- ==============================
+hasil.html
+============================== -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hasil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Data Berhasil Dikirim</h2>
+<p id="outputNama"></p>
+<p id="outputEmail"></p>
+
+<a href="index.html">Kembali</a>
+
+<script>
+const nama = localStorage.getItem("nama");
+const email = localStorage.getItem("email");
+
+document.getElementById("outputNama").innerText = "Nama: " + nama;
+document.getElementById("outputEmail").innerText = "Email: " + email;
+</script>
+
+</body>
+</html>
+
+<!-- ==============================
+script.js
+============================== -->
+function kirimData(event) {
+    event.preventDefault();
+
+    const nama = document.getElementById("nama").value;
+    const email = document.getElementById("email").value;
+
+    localStorage.setItem("nama", nama);
+    localStorage.setItem("email", email);
+
+    window.location.href = "hasil.html";
+}
+
+<!-- ==============================
+style.css
+============================== -->
+body {
+    font-family: Arial;
+    background-color: #fdf6f0;
+    text-align: center;
+}
+
+nav {
+    background: #ffd6e0;
+    padding: 10px;
+}
+
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.card {
+    background: #ffe4ec;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+button {
+    background: #ffb6c1;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
