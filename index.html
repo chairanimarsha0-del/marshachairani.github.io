@@ -1,78 +1,90 @@
-<!-- ==============================
-UPGRADED VERSION (AESTHETIC + ANIMASI + QR DANA)
-============================== -->
-
-<!-- STRUKTUR -->
-<!--
-project/
-│── index.html
-│── about.html
-│── produk.html
-│── kontak.html
-│── hasil.html
-│── style.css
-│── script.js
-│── qr.png (QR DANA kamu)
--->
-
-<!-- ==============================
-index.html
-============================== -->
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Machaa Creative</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machaa Digital Creative</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="produk.html">Produk</a>
-<a href="kontak.html">Kontak</a>
-</nav>
 
-<section class="fade">
-<h1>✨ Machaa Creative ✨</h1>
-<p>Jasa pembuatan konten pendek kreatif untuk menginspirasi anak muda.</p>
-</section>
+    <!-- Navigasi -->
+    <nav>
+        <div class="logo">Machaa Creative</div>
+        <ul>
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('about')">About</a></li>
+            <li><a href="#" onclick="showPage('produk')">Produk</a></li>
+            <li><a href="#" onclick="showPage('kontak')">Kontak</a></li>
+        </ul>
+    </nav>
 
+    <div class="container">
+        <!-- Halaman Home -->
+        <section id="home" class="page active">
+            <h1>Creative Digital Lab</h1>
+            <p>Transformasi ide menjadi konten digital yang menginspirasi anak muda Indonesia.</p>
+            <img src="https://images.unsplash.com/photo-1493119508027-2b584f234d6c?q=80&w=600" alt="Creative" class="hero-img">
+        </section>
+
+        <!-- Halaman About -->
+        <section id="about" class="page">
+            <h2>Tentang Kami</h2>
+            <div class="card">
+                <p><strong>Nama Usaha:</strong> Machaa Digital Creative</p>
+                <p><strong>Latar Belakang:</strong> Kami hadir sebagai solusi bagi pemuda yang ingin mulai berkarya namun bingung memulai dari mana. Kami percaya satu konten singkat bisa mengubah perspektif dunia.</p>
+                <h3>Visi & Misi</h3>
+                <p>Menjadi pelopor konten edukatif dan inspiratif bagi generasi Z dengan menyediakan jasa editing berkualitas tinggi.</p>
+            </div>
+        </section>
+
+        <!-- Halaman Produk -->
+        <section id="produk" class="page">
+            <h2>Produk Digital</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <h3>Starter Pack Creator</h3>
+                    <p>Panduan langkah demi langkah memulai konten dari nol.</p>
+                    <p class="price">Rp 10.000</p>
+                </div>
+                <div class="product-item">
+                    <h3>30 Hari Ide Konten</h3>
+                    <p>Kumpulan script fokus pada pengembangan diri.</p>
+                    <p class="price">Rp 10.000</p>
+                </div>
+                <div class="product-item">
+                    <h3>Preset Aesthetic</h3>
+                    <p>Filter warna pastel siap pakai untuk video pendek.</p>
+                    <p class="price">Rp 10.000</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Halaman Kontak -->
+        <section id="kontak" class="page">
+            <h2>Kontak Kami</h2>
+            <form id="contactForm">
+                <input type="text" id="nama" value="Machaa" required placeholder="Nama Anda">
+                <input type="email" id="email" value="chairanimarsha0@gmail.com" required placeholder="Email Anda">
+                <textarea id="pesan" placeholder="Produk apa yang ingin dibeli?" required></textarea>
+                <button type="submit">Kirim & Bayar</button>
+            </form>
+            
+            <div id="response" class="hidden">
+                <div class="card result">
+                    <h3>Detail Pesanan Anda:</h3>
+                    <p id="resNama"></p>
+                    <p id="resEmail"></p>
+                    <hr>
+                    <h4>Cara Pembayaran:</h4>
+                    <p>Silakan scan atau transfer DANA ke:</p>
+                    <p class="dana-num">083834220255</p>
+                    <p>Kirim bukti transfer ke email di atas.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
-<!-- ==============================
-about.html
-============================== -->
-<!DOCTYPE html>
-<html>
-<head>
-<title>About</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="produk.html">Produk</a>
-<a href="kontak.html">Kontak</a>
-</nav>
-
-<section class="fade">
-<h2>Machaa Creative</h2>
-<p>Usaha digital content creator konten pendek yang fokus menginspirasi anak muda.</p>
-
-<h3>Visi</h3>
-<p>Menjadi inspirasi digital generasi muda.</p>
-
-<h3>Misi</h3>
-<ul>
-<li>Membuat konten kreatif</li>
-<li>Menginspirasi</li>
-<li>Layanan berkualitas</li>
-</ul>
-</section>
-
-</body>
-</html>
-
-<!-- =========================
