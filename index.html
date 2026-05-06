@@ -1,7 +1,8 @@
 <!-- ==============================
-STRUKTUR PROJECT (HTML, CSS, JS)
+UPGRADED VERSION (AESTHETIC + ANIMASI + QR DANA)
 ============================== -->
 
+<!-- STRUKTUR -->
 <!--
 project/
 │── index.html
@@ -11,10 +12,11 @@ project/
 │── hasil.html
 │── style.css
 │── script.js
+│── qr.png (QR DANA kamu)
 -->
 
 <!-- ==============================
-index.html (HOME)
+index.html
 ============================== -->
 <!DOCTYPE html>
 <html>
@@ -30,8 +32,10 @@ index.html (HOME)
 <a href="kontak.html">Kontak</a>
 </nav>
 
-<h1>Machaa Creative</h1>
-<p>Jasa pembuatan konten pendek kreatif untuk menginspirasi anak muda agar lebih produktif dan kreatif di dunia digital.</p>
+<section class="fade">
+<h1>✨ Machaa Creative ✨</h1>
+<p>Jasa pembuatan konten pendek kreatif untuk menginspirasi anak muda.</p>
+</section>
 
 </body>
 </html>
@@ -53,169 +57,22 @@ about.html
 <a href="kontak.html">Kontak</a>
 </nav>
 
+<section class="fade">
 <h2>Machaa Creative</h2>
-<p>Usaha digital di bidang content creator konten pendek.</p>
+<p>Usaha digital content creator konten pendek yang fokus menginspirasi anak muda.</p>
 
 <h3>Visi</h3>
-<p>Menjadi inspirasi digital bagi anak muda.</p>
+<p>Menjadi inspirasi digital generasi muda.</p>
 
 <h3>Misi</h3>
 <ul>
 <li>Membuat konten kreatif</li>
-<li>Menginspirasi generasi muda</li>
+<li>Menginspirasi</li>
 <li>Layanan berkualitas</li>
 </ul>
+</section>
 
 </body>
 </html>
 
-<!-- ==============================
-produk.html
-============================== -->
-<!DOCTYPE html>
-<html>
-<head>
-<title>Produk</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="produk.html">Produk</a>
-<a href="kontak.html">Kontak</a>
-</nav>
-
-<h2>Produk Digital</h2>
-
-<div class="card">
-<h3>Video Motivasi</h3>
-<p>Konten pendek untuk membangun semangat anak muda.</p>
-<p>Harga: Rp10.000</p>
-</div>
-
-<div class="card">
-<h3>Konten Edukasi</h3>
-<p>Konten singkat edukatif dan inspiratif.</p>
-<p>Harga: Rp10.000</p>
-</div>
-
-<div class="card">
-<h3>Storytelling</h3>
-<p>Cerita inspiratif untuk kreativitas.</p>
-<p>Harga: Rp10.000</p>
-</div>
-
-</body>
-</html>
-
-<!-- ==============================
-kontak.html
-============================== -->
-<!DOCTYPE html>
-<html>
-<head>
-<title>Kontak</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="produk.html">Produk</a>
-<a href="kontak.html">Kontak</a>
-</nav>
-
-<h2>Kontak</h2>
-<form onsubmit="kirimData(event)">
-<label>Nama:</label><br>
-<input type="text" id="nama" value="Machaa"><br>
-
-<label>Email:</label><br>
-<input type="email" id="email" value="chairanimarsha0@gmail.com"><br><br>
-
-<button type="submit">Kirim</button>
-</form>
-
-<p>Pembayaran: Scan DANA ke 083834220255</p>
-
-<script src="script.js"></script>
-</body>
-</html>
-
-<!-- ==============================
-hasil.html
-============================== -->
-<!DOCTYPE html>
-<html>
-<head>
-<title>Hasil</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<h2>Data Berhasil Dikirim</h2>
-<p id="outputNama"></p>
-<p id="outputEmail"></p>
-
-<a href="index.html">Kembali</a>
-
-<script>
-const nama = localStorage.getItem("nama");
-const email = localStorage.getItem("email");
-
-document.getElementById("outputNama").innerText = "Nama: " + nama;
-document.getElementById("outputEmail").innerText = "Email: " + email;
-</script>
-
-</body>
-</html>
-
-<!-- ==============================
-script.js
-============================== -->
-function kirimData(event) {
-    event.preventDefault();
-
-    const nama = document.getElementById("nama").value;
-    const email = document.getElementById("email").value;
-
-    localStorage.setItem("nama", nama);
-    localStorage.setItem("email", email);
-
-    window.location.href = "hasil.html";
-}
-
-<!-- ==============================
-style.css
-============================== -->
-body {
-    font-family: Arial;
-    background-color: #fdf6f0;
-    text-align: center;
-}
-
-nav {
-    background: #ffd6e0;
-    padding: 10px;
-}
-
-nav a {
-    margin: 10px;
-    text-decoration: none;
-    color: #333;
-}
-
-.card {
-    background: #ffe4ec;
-    margin: 20px;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-button {
-    background: #ffb6c1;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-}
+<!-- =========================
