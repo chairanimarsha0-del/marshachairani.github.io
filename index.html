@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreativeTeen - Content Creator Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">CreativeTeen</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#produk">Produk</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Inspirasi Digital Remaja</h1>
+        <p>Membantu kamu menciptakan konten video dan blog yang bermakna dan edukatif.</p>
+    </section>
+
+    <section id="about" class="container">
+        <h2>Tentang Kami</h2>
+        <div class="card">
+            <h3>CreativeTeen Studio</h3>
+            <p><strong>Latar Belakang:</strong> Berawal dari keinginan untuk mengisi ruang digital remaja dengan konten yang lebih positif dan inspiratif.</p>
+            <p><strong>Visi:</strong> Menjadi wadah kreatifitas utama bagi konten edukasi remaja di Indonesia.</p>
+            <p><strong>Misi:</strong> Memproduksi video berkualitas dan tulisan blog yang mudah dipahami namun penuh ilmu.</p>
+        </div>
+    </section>
+
+    <section id="produk" class="container">
+        <h2>Produk Digital</h2>
+        <div class="grid-produk">
+            <div class="card-produk">
+                <h3>Video Edukasi: Public Speaking</h3>
+                <p>Panduan video cara tampil percaya diri di depan kamera untuk remaja.</p>
+                <p class="harga">Rp 10.000</p>
+            </div>
+            <div class="card-produk">
+                <h3>Video Edukasi: Editing Mobile</h3>
+                <p>Belajar edit video cinematik hanya menggunakan handphone.</p>
+                <p class="harga">Rp 10.000</p>
+            </div>
+            <div class="card-produk">
+                <h3>E-Blog: Creative Writing</h3>
+                <p>Kumpulan tips menulis blog yang menarik untuk audiens sebaya.</p>
+                <p class="harga">Rp 10.000</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="container">
+        <h2>Hubungi Kami</h2>
+        <div class="card">
+            <form id="contactForm">
+                <input type="text" id="nama" placeholder="Nama Lengkap" value="Marsha Chairani" required>
+                <input type="email" id="email" placeholder="Email" value="chairanimarsha0@gmail.com" required>
+                <textarea id="pesan" placeholder="Pesan kamu..." required></textarea>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+            <div id="response" class="hidden">
+                <h3>Terima Kasih!</h3>
+                <p id="responseText"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 CreativeTeen Studio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
