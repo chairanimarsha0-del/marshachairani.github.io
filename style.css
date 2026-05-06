@@ -1,1 +1,96 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #FDF6F0; /* Pastel Background */
+    color: #555;
+}
 
+nav {
+    background-color: #A0C4FF; /* Pastel Blue */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.page {
+    display: none; /* Sembunyikan semua halaman secara default */
+}
+
+.active {
+    display: block; /* Hanya tampilkan halaman aktif */
+}
+
+h1, h2 {
+    color: #FFADAD; /* Pastel Red/Pink */
+}
+
+.hero-img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card, .product-item {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-top: 20px;
+}
+
+.product-item {
+    background-color: #CAFFBF; /* Pastel Green */
+    border: 2px solid #B7E4C7;
+}
+
+.price {
+    font-weight: bold;
+    color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #FFD6A5; /* Pastel Orange */
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hidden { display: none; }
+.dana-num {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #5A189A;
+}
